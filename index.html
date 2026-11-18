@@ -3,14 +3,87 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JeCube - 3x3 Speed Trainer</title>
+<title>CubeSensei – Speedcube Trainer</title>
+<meta name="description" content="CubeSensei: a free Android speedcubing trainer with WCA timer, CFOP lessons, 119 F2L/OLL/PLL cases, trainers and a cube scanner.">
+<link rel="icon" href="cubesensei/icon-256.png">
+<style>
+  :root { --bg:#0b0e22; --card:#151b44; --text:#f2f4ff; --muted:#aab2d8; --gold:#ffd54f; --orange:#ff7a1a; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 16px; }
+  header { background:radial-gradient(circle at 30% 30%,#2b3a8c 0%,#151b44 50%,#07091a 100%); padding:48px 0 40px; }
+  .hero { display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
+  .hero img { width:120px; height:120px; border-radius:28px; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  h1 { margin:0; font-size:clamp(34px,6vw,52px); font-weight:900; background:linear-gradient(90deg,#fff,var(--gold) 60%,var(--orange)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { font-size:20px; font-weight:600; margin:2px 0 6px; }
+  .tag { color:var(--gold); margin:0; }
+  .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:22px; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .btn.primary { background:var(--gold); color:#151b44; }
+  .btn.ghost { border:1px solid rgba(255,255,255,.35); color:var(--text); }
+  section { padding:36px 0; }
+  h2 { font-size:24px; margin:0 0 16px; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+  .f { background:var(--card); border-radius:18px; padding:16px 18px; }
+  .f b { display:block; margin-bottom:4px; }
+  .f span { color:var(--muted); font-size:15px; }
+  .shots { display:flex; gap:14px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory; }
+  .shots img { height:420px; width:auto; border-radius:18px; scroll-snap-align:start; flex:none; box-shadow:0 6px 20px rgba(0,0,0,.35); }
+  @media (max-width:520px){ .shots img { height:340px; } }
+  footer { color:var(--muted); font-size:14px; padding:28px 0 40px; border-top:1px solid rgba(255,255,255,.08); }
+  footer a { color:var(--muted); }
+</style>
 </head>
-<body style="font-family:sans-serif;max-width:640px;margin:40px auto;padding:0 16px">
-<h1>JeCube - 3x3 Speed Trainer</h1>
-<p>Android app for speedcubing practice.</p>
-<ul>
-<li><a href="https://sites.google.com/view/jecube-app">Website</a></li>
-<li><a href="https://sites.google.com/view/jecube-app/privacy-policy">Privacy policy</a></li>
-</ul>
+<body>
+<header>
+  <div class="wrap hero">
+    <img src="cubesensei/icon-256.png" alt="CubeSensei app icon">
+    <div>
+      <h1>CubeSensei</h1>
+      <p class="sub">Speedcube Trainer for Android</p>
+      <p class="tag">Learn. Train. Solve Faster.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.speedcube.trainer">Get it on Google Play</a>
+        <a class="btn ghost" href="https://sites.google.com/view/jecube-app/privacy-policy">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="cubesensei/screen-1.jpg" alt="Opening screen" loading="lazy">
+      <img src="cubesensei/screen-2.jpg" alt="Home with training modules" loading="lazy">
+      <img src="cubesensei/screen-3.jpg" alt="Trainers overview" loading="lazy">
+      <img src="cubesensei/screen-4.jpg" alt="Statistics and today's training" loading="lazy">
+      <img src="cubesensei/screen-5.jpg" alt="Cube scanner" loading="lazy">
+      <img src="cubesensei/screen-6.jpg" alt="F2L trainer cases" loading="lazy">
+      <img src="cubesensei/screen-7.jpg" alt="Animated 3D algorithm player" loading="lazy">
+      <img src="cubesensei/screen-8.jpg" alt="Case detail with step-by-step" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What's inside</h2>
+    <div class="features">
+      <div class="f"><b>WCA timer</b><span>Hold-to-start, inspection, +2/DNF, sessions, Ao5 to Ao1000.</span></div>
+      <div class="f"><b>119 algorithm cases</b><span>All F2L, OLL and PLL with an animated 3D player, each verified on a virtual cube.</span></div>
+      <div class="f"><b>Trainers</b><span>Algorithm, recognition and cross trainers with spaced repetition.</span></div>
+      <div class="f"><b>Cube scanner</b><span>Two photos of your cube, and the app finds a solution.</span></div>
+      <div class="f"><b>Lessons and coach</b><span>CFOP lessons from beginner up and a daily training plan.</span></div>
+      <div class="f"><b>Offline, no account</b><span>Works without internet. English, Türkçe, Deutsch.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 CubeSensei · <a href="https://sites.google.com/view/jecube-app">Website</a> · <a href="https://sites.google.com/view/jecube-app/privacy-policy">Privacy policy</a>
+  </div>
+</footer>
 </body>
 </html>
